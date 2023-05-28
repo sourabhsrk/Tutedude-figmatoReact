@@ -1,38 +1,308 @@
-.App {
-  text-align: center;
+
+.header{
+  background-color: rgb(250, 245, 245);
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  margin: 0 0 0 50px;
+}
+.navbar{
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(128, 0, 128, 0.25);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.assignment{
+  margin: 0 15px;
+}
+.mentor{
+  margin: 0 15px;
+}
+.signOn{
+  display: flex;
+  justify-content: center;
+  margin: 0 50px 0 15px;
+  gap: 4px;
+  color:#800080;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main{
+  background-color: rgb(243, 240, 240);
+}
+.ReferEarn{
+  height: 76px;
+  background-color: white;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+}
+.refercontent{
+  align-items: center;
+  position: absolute;
+  top: 83px;
+  left: 187px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.amount{
+  display: flex;
+  flex-direction: row;
+}
+
+.balance{
+  background-color: white;
+  width: 486px;
+  height: 188px;
+  box-shadow: 0px 3px 100px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: absolute;
+  left: 187px;
+  top: 179px;
+}
+
+.referral{
   display: flex;
   flex-direction: column;
+}
+.referraltext{
+  color: #800080;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 24px;
+  position: absolute;
+  left: 766px;
+  top: 157px;
+}
+
+.rcode{
+  background-color: white;
+  color:#800080;
+  width: 358px;
+  height: 60px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid red;
+  font-family: 'Poppins';
+  font-weight: 500;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: absolute;
+  left: 766px;
+  top: 224px;
+}
+
+.rcode span{
+  font-size: 20px;
+  letter-spacing: 1.5em;
+}
+
+.rcode button{
+  font-size: 40px;
+  margin: 0 0 0 12px;
+  border: none;
+  background-color: white;
+  color: red;
+}
+
+.money{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.money1, .money2, .money3{
+  color:#800080;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.money1num, .money2num, .money3num{
+  color: black;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.withdraw{
+  background: #800080;
   color: white;
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 8px 16px;
+  position: absolute;
+  top: 128px;
+  left: 133px;
 }
 
-.App-link {
-  color: #61dafb;
+.instructions{
+  position: absolute;
+  top: 376px;
+  left: 187px;
+}
+.instructHeading{
+  color:#800080;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer{
+  color:#800080;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 500;
 }
+
+.enrolled{
+  position: absolute;
+  left: 187px;
+  top: 738px;
+}
+
+.terms{
+  position: absolute;
+  left: 187px;
+  top: 779px;
+}
+
+.iheading{
+  color: #000000;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.ipara{
+  color: #4D4D4D;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.mainInstructions{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.leftInstruction, .rightInstructions {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftInstruction {
+  position: absolute;
+  left: 187px;
+}
+
+.rightInstructions {
+  position: absolute;
+  left: 430px;
+}
+
+.imain {
+  margin: 8px 0 0 0;
+  width: 359px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+.imgInstruct{
+  width: 65px;
+  height: 65px;
+  background: rgba(217, 217, 217, 0.25);
+  display: grid;
+  place-items: center;
+  border-radius: 80px;
+}
+
+.icontentL1{
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 72px;
+  padding: 10px;
+  position: absolute;
+  left: 70px;
+  top: 60px;
+}
+
+.ipara1{
+  position: absolute;
+  top: 36px;
+}
+
+.icontentL2{
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 72px;
+  padding: 10px;
+  position: absolute;
+  left: 70px;
+  top: 141px;
+}
+
+.ipara2{
+  position: absolute;
+  top: 35px;
+}
+
+.icontentL3{
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 72px;
+  padding: 10px;
+  position: absolute;
+  left: 70px;
+  top: 220px;
+}
+
+.ipara3{
+  position: absolute;
+  top: 35px;
+}
+
+
+.icontentL4{
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 72px;
+  padding: 10px;
+  position: absolute;
+  left: 68px;
+  top: -15px;
+}
+
+.ipara4{
+  position: absolute;
+  top: 35px;
+}
+
+.icontentL5{
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 72px;
+  padding: 10px;
+  position: absolute;
+  left: 68px;
+  top: 65px;
+}
+
+.ipara5{
+  position: absolute;
+  top: 35px;
+}
+
