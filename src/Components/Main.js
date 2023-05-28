@@ -6,8 +6,9 @@ import imgpurchase from '../Images/imgpurchase.png'
 import imgwallet from '../Images/imgwallet.png'
 
 const Main = () => {
-    const [refcode,setRefcode] = useState('EDCH54');
+    const [refcode,setRefcode] = useState('');
     const handleCopy = () => {
+        setRefcode('EDCH54')
         navigator.clipboard.writeText(refcode);
     }
   return (
